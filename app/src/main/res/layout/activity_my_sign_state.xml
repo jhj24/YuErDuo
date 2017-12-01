@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/hbar_label_height"
+        android:background="@drawable/bg_boder"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bottom_tab_padding_drawable"
+            android:layout_marginRight="@dimen/bottom_tab_padding_drawable"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/bottom_tab_padding_drawable"
+                android:text="签到状态:"
+                android:textColor="@color/bill_line_title"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_sign_start_first"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:hint="未签到"
+                android:padding="@dimen/bottom_tab_padding_drawable"
+                android:textColor="@color/bill_line_text"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/borderDark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bottom_tab_padding_drawable"
+            android:layout_marginRight="@dimen/bottom_tab_padding_drawable"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/bottom_tab_padding_drawable"
+                android:text="签退状态:"
+                android:textColor="@color/bill_line_title"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_sign_end_first"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:hint="未签退"
+                android:padding="@dimen/bottom_tab_padding_drawable"
+                android:textColor="@color/bill_line_text"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/hbar_label_height"
+        android:background="@drawable/bg_boder"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bottom_tab_padding_drawable"
+            android:layout_marginRight="@dimen/bottom_tab_padding_drawable"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/bottom_tab_padding_drawable"
+                android:text="签到状态:"
+                android:textColor="@color/bill_line_title"
+
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_sign_start_second"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:hint="未签到"
+                android:padding="@dimen/bottom_tab_padding_drawable"
+                android:textColor="@color/bill_line_text"
+
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/borderDark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bottom_tab_padding_drawable"
+            android:layout_marginRight="@dimen/bottom_tab_padding_drawable"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/bottom_tab_padding_drawable"
+                android:text="签退状态:"
+                android:textColor="@color/bill_line_title"
+
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_sign_end_second"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:hint="未签退"
+                android:padding="@dimen/bottom_tab_padding_drawable"
+                android:textColor="@color/bill_line_text"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

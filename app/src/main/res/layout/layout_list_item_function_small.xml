@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/line_top"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/borderDark" />
+
+    <LinearLayout
+        android:id="@+id/list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgd_list_item"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/functionImage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/function4" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textColor="#646464"
+            android:text="关于我们" />
+
+        <View
+            android:id="@+id/red_dot"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:background="@drawable/red_dot" />
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/account_ic_right_arrow" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_middle"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/borderLight" />
+
+    <View
+        android:id="@+id/line_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/borderDark" />
+</LinearLayout>

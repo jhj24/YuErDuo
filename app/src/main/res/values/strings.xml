@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">久其供应链</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="input_phone_number_notice">重置密码需要验证你的手机号码</string>
+
+    <string name="about_app">关于我们</string>
+    <string name="companyName">久其供应链 - 移动营销管理专家</string>
+
+</resources>

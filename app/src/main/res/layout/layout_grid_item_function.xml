@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/grid_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bgd_list_item_transparent"
+    android:clickable="true"
+    android:orientation="vertical">
+
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_heightPercent="100%w"
+        app:layout_widthPercent="100%">
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/item_function"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/functionImage"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:src="@drawable/func_placeholder"
+                app:layout_heightPercent="50%"
+                app:layout_widthPercent="50%h" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/functionImage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="功能"
+                android:textColor="@color/functionGridItemText"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/bt_delete"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignRight="@id/functionImage"
+                android:layout_alignTop="@id/functionImage"
+                android:layout_marginRight="5dp"
+                android:minWidth="15dp"
+                android:src="@drawable/btn_del"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_number_total"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_alignRight="@id/functionImage"
+                android:layout_alignTop="@id/functionImage"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/red_rectangle"
+                android:gravity="center"
+                android:minWidth="15dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="gone" />
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/item_add"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            app:layout_heightPercent="100%w"
+            app:layout_widthPercent="100%">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_add" />
+        </RelativeLayout>
+
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

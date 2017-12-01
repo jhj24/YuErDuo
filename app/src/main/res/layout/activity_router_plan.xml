@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackgroundDark"
+    android:orientation="vertical"
+    tools:context="com.jqyd.yuerduo.activity.order.RouterPlanActivity">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:id="@+id/btn_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp">
+
+            <RadioButton
+                android:id="@+id/route_drive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/route_drive_bg"
+                android:button="@null"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/route_bus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/route_bus_bg"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/route_walk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/route_walk_bg"
+                android:button="@null" />
+        </RadioGroup>
+
+        <RelativeLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/firstline"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="12dp"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/secondline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/firstline"
+                android:layout_marginLeft="12dp"
+                android:gravity="right"
+                android:singleLine="true"
+                android:textColor="#999999"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/detail"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="详情"
+                    android:textColor="@color/phone_color"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:layout_width="7dp"
+                    android:layout_height="13dp"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/arrow_right"
+                    android:backgroundTint="@color/phone_color"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.amap.api.maps2d.MapView
+            android:id="@+id/route_map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/bottom_layout"
+            android:layout_below="@id/btn_group"></com.amap.api.maps2d.MapView>
+
+        <LinearLayout
+            android:id="@+id/bus_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/btn_group"
+            android:background="@color/transparent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/bus_result_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white_bg"
+                android:scrollbars="vertical" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

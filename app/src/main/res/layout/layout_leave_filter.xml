@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/layout_leave_filter"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_creator"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/bill_line_title"
+            android:textSize="@dimen/bill_line_title"
+            android:text="提交人:" />
+
+        <EditText
+            android:id="@+id/et_creator"
+            android:layout_width="0dp"
+            android:singleLine="true"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textColorHint="@color/bill_line_hint"
+            android:textColor="@color/bill_line_text"
+            android:textSize="@dimen/bill_line_title"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/borderLight" />
+
+    <LinearLayout
+        android:id="@+id/layout_leave_start_date"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/bill_line_title"
+            android:textSize="@dimen/bill_line_title"
+            android:text="开始日期:" />
+
+        <TextView
+            android:id="@+id/tv_leaveStartDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textColorHint="@color/bill_line_hint"
+            android:textColor="@color/bill_line_text"
+            android:textSize="@dimen/bill_line_title"
+            android:hint="请选择" />
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/account_ic_right_arrow" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/borderLight" />
+
+    <LinearLayout
+        android:id="@+id/layout_leave_end_date"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/bill_line_title"
+            android:textSize="@dimen/bill_line_title"
+            android:text="结束日期:" />
+
+        <TextView
+            android:id="@+id/tv_leaveEndDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textColorHint="@color/bill_line_hint"
+            android:textColor="@color/bill_line_text"
+            android:textSize="@dimen/bill_line_title"
+            android:layout_weight="0.91"
+            android:hint="请选择" />
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/account_ic_right_arrow" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/borderLight" />
+
+    <LinearLayout
+        android:id="@+id/layout_leave_type"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/bill_line_title"
+            android:textSize="@dimen/bill_line_title"
+            android:text="请假类型:" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_leave_type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:textColorHint="@color/bill_line_hint"
+                android:textColor="@color/bill_line_text"
+                android:textSize="@dimen/bill_line_title"
+                android:layout_weight="1"
+                android:hint="数据加载中..." />
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/account_ic_right_arrow" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/borderLight" />
+
+    <LinearLayout
+        android:id="@+id/layout_leave_state"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/bill_line_title"
+            android:textSize="@dimen/bill_line_title"
+            android:text="审批状态:" />
+
+        <TextView
+            android:id="@+id/tv_leaveState"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textColorHint="@color/bill_line_hint"
+            android:textColor="@color/bill_line_text"
+            android:textSize="@dimen/bill_line_title"
+            android:layout_weight="1"
+            android:hint="请选择" />
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/account_ic_right_arrow" />
+    </LinearLayout>
+
+
+</LinearLayout>

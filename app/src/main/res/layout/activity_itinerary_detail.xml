@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_top_bar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:background="@color/primary"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/weekIndicatorStyle"
+                android:text="日" />
+
+            <TextView
+                style="@style/weekIndicatorStyle"
+                android:text="一" />
+
+            <TextView
+                style="@style/weekIndicatorStyle"
+                android:text="二" />
+
+            <TextView
+                style="@style/weekIndicatorStyle"
+                android:text="三" />
+
+            <TextView
+                style="@style/weekIndicatorStyle"
+                android:text="四" />
+
+            <TextView
+                style="@style/weekIndicatorStyle"
+                android:text="五" />
+
+            <TextView
+                style="@style/weekIndicatorStyle"
+                android:text="六" />
+
+        </LinearLayout>
+
+        <com.jqyd.yuerduo.widget.calendar.MyScrollView
+            android:id="@+id/myScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.jqyd.yuerduo.widget.calendar.CalendarPager
+                    android:id="@+id/calendarPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_bg"></com.jqyd.yuerduo.widget.calendar.CalendarPager>
+
+                <com.jqyd.yuerduo.widget.calendar.ContentDetailPager
+                    android:id="@+id/contentDetailPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></com.jqyd.yuerduo.widget.calendar.ContentDetailPager>
+            </LinearLayout>
+        </com.jqyd.yuerduo.widget.calendar.MyScrollView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_today"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/today"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_refresh"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/refresh"
+        android:visibility="gone" />
+</RelativeLayout>

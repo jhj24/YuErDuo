@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="date_staff">
+        <item>Peter员工</item>
+        <item>Allen员工</item>
+        <item>阿妹员工</item>
+        <item>阿郎员工</item>
+        <item>陈奕迅员工</item>
+        <item>周杰伦员工</item>
+        <item>曾一鸣员工</item>
+        <item>成龙员工</item>
+        <item>王力宏员工</item>
+        <item>汪峰员工</item>
+        <item>王菲员工</item>
+        <item>那英员工</item>
+        <item>张伟员工</item>
+        <item>张学友员工</item>
+        <item>李德华员工</item>
+        <item>郑源员工</item>
+        <item>白水水员工</item>
+        <item>重庆员工</item>
+        <item>白天不亮员工</item>
+        <item>陈龙员工</item>
+        <item>陈丽丽员工</item>
+        <item>哈林员工</item>
+        <item>高进员工</item>
+        <item>高雷员工</item>
+        <item>阮今天员工</item>
+        <item>龚琳娜员工</item>
+        <item>苏醒员工</item>
+        <item>苏永康员工</item>
+        <item>陶喆员工</item>
+        <item>沙宝亮员工</item>
+        <item>宋冬野员工</item>
+        <item>宋伟员工</item>
+        <item>袁成杰员工</item>
+        <item>戚薇员工</item>
+        <item>齐大友员工</item>
+        <item>齐天大圣员工</item>
+        <item>品冠员工</item>
+        <item>吴克群员工</item>
+        <item>BOBO员工</item>
+        <item>Jobs员工</item>
+        <item>动力火车员工</item>
+        <item>伍佰员工</item>
+        <item>#蔡依林员工</item>
+        <item>$797835344$员工</item>
+        <item>Jack员工</item>
+        <item>~夏先生员工</item>
+    </string-array>
+
+
+    <string-array name="date_customer">
+        <!--<item>Peter渠道</item>
+        <item>Allen渠道</item>
+        <item>阿妹渠道</item>
+        <item>阿郎渠道</item>
+        <item>陈奕迅渠道</item>
+        <item>周杰伦渠道</item>
+        <item>曾一鸣渠道</item>
+        <item>成龙渠道</item>
+        <item>王力宏渠道</item>
+        <item>汪峰渠道</item>
+        <item>王菲渠道</item>
+        <item>那英渠道</item>
+        <item>张伟渠道</item>
+        <item>张学友渠道</item>
+        <item>李德华渠道</item>
+        <item>郑源渠道</item>
+        <item>白水水渠道</item>
+        <item>重庆渠道</item>
+        <item>白天不亮渠道</item>
+        <item>陈龙渠道</item>
+        <item>陈丽丽渠道</item>
+        <item>哈林渠道</item>
+        <item>高进渠道</item>
+        <item>高雷渠道</item>
+        <item>阮今天渠道</item>
+        <item>龚琳娜渠道</item>
+        <item>苏醒渠道</item>
+        <item>苏永康渠道</item>
+        <item>陶喆渠道</item>
+        <item>沙宝亮渠道</item>
+        <item>宋冬野渠道</item>
+        <item>宋伟渠道</item>
+        <item>袁成杰渠道</item>
+        <item>戚薇渠道</item>
+        <item>齐大友渠道</item>
+        <item>齐天大圣渠道</item>
+        <item>品冠渠道</item>
+        <item>吴克群渠道</item>
+        <item>BOBO渠道</item>
+        <item>Jobs渠道</item>
+        <item>动力火车渠道</item>
+        <item>伍佰渠道</item>
+        <item>#蔡依林渠道</item>
+        <item>$797835344$渠道</item>
+        <item>Jack渠道</item>
+        <item>~夏先生渠道</item>-->
+    </string-array>
+
+</resources>

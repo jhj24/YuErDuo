@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_visit_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackgroundDark"
+    android:orientation="vertical"
+    tools:context="com.jqyd.yuerduo.activity.visit.VisitInfoActivity">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/windowBackground"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="30dp">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/shop" />
+
+                <TextView
+                    android:id="@+id/tv_customer_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/windowBackground"
+                android:paddingBottom="8dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="联  系  人："
+                    android:textColor="@color/bill_line_title"
+                    android:textSize="@dimen/bill_line_title" />
+
+                <TextView
+                    android:id="@+id/tv_contacts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/bill_line_text"
+                    android:textSize="@dimen/bill_line_title" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_creator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/windowBackground"
+                android:paddingBottom="8dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="采  集  人："
+                    android:textColor="@color/bill_line_title"
+                    android:textSize="@dimen/bill_line_title" />
+
+                <TextView
+                    android:id="@+id/tv_creator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/bill_line_text"
+                    android:textSize="@dimen/bill_line_title" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_distribution_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/windowBackground"
+                android:paddingBottom="8dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="销售区域："
+                    android:textColor="@color/bill_line_title"
+                    android:textSize="@dimen/bill_line_title" />
+
+                <TextView
+                    android:id="@+id/tv_distribution_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/bill_line_text"
+                    android:textSize="@dimen/bill_line_title" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_mobile_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/windowBackground"
+                android:paddingBottom="8dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="联系电话："
+                    android:textColor="@color/bill_line_title"
+                    android:textSize="@dimen/bill_line_title" />
+
+                <TextView
+                    android:id="@+id/tv_mobile_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/bill_line_text"
+                    android:textSize="@dimen/bill_line_title" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fixed_phone_LL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/windowBackground"
+                android:paddingBottom="8dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="固定电话："
+                    android:textColor="@color/bill_line_title"
+                    android:textSize="@dimen/bill_line_title" />
+
+                <TextView
+                    android:id="@+id/tv_fixed_telephone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/bill_line_text"
+                    android:textSize="@dimen/bill_line_title" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/businessLicence_LL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/windowBackground"
+                android:paddingBottom="8dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="营业执照："
+                    android:textColor="@color/bill_line_title"
+                    android:textSize="@dimen/bill_line_title" />
+
+                <TextView
+                    android:id="@+id/tv_businessLicence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/bill_line_text"
+                    android:textSize="@dimen/bill_line_title" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/groupName_LL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/windowBackground"
+                android:paddingBottom="8dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="客户分组："
+                    android:textColor="@color/bill_line_title"
+                    android:textSize="@dimen/bill_line_title" />
+
+                <TextView
+                    android:id="@+id/tv_groupName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/bill_line_text"
+                    android:textSize="@dimen/bill_line_title" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/attrName_LL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/windowBackground"
+                android:paddingBottom="8dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="客户属性："
+                    android:textColor="@color/bill_line_title"
+                    android:textSize="@dimen/bill_line_title" />
+
+                <TextView
+                    android:id="@+id/tv_client_property"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/bill_line_text"
+                    android:textSize="@dimen/bill_line_title" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/channelTypeName_LL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/windowBackground"
+                android:paddingBottom="8dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="客户类型："
+                    android:textColor="@color/bill_line_title"
+                    android:textSize="@dimen/bill_line_title" />
+
+                <TextView
+                    android:id="@+id/tv_customer_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/bill_line_text"
+                    android:textSize="@dimen/bill_line_title" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/windowBackground"
+                android:paddingBottom="8dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="地址详情："
+                    android:textColor="@color/bill_line_title"
+                    android:textSize="@dimen/bill_line_title" />
+
+                <TextView
+                    android:id="@+id/tv_customer_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/bill_line_text"
+                    android:textSize="@dimen/bill_line_title" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/borderLight" />
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="20dp"
+                android:background="@color/borderLight" />
+
+            <LinearLayout
+                android:id="@+id/layout_sales_area"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bgd_list_item"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="销售区域：" />
+
+                <TextView
+                    android:id="@+id/tv_sales_area"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:hint="请选择"
+                    android:textColor="@color/bill_line_text" />
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/account_ic_right_arrow" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/borderLight" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_marginTop="20dp"
+                android:background="@color/borderLight" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_commit"
+        style="@style/buttonNormal2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提交" />
+</LinearLayout>

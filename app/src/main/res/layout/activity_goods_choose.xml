@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackgroundDark"
+    android:orientation="vertical"
+    tools:context="com.jqyd.yuerduo.activity.goods.GoodsChooseActivity">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <include layout="@layout/layout_search_input_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bt_reRequest"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="25dp"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:text="查询失败"
+            android:textColor="@color/list_refresh_btn" />
+
+        <Button
+            android:id="@+id/bt_reRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bgd_refresh_btn"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="刷新"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

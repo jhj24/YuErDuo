@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clickable="true"
+    android:id="@+id/list_item"
+    android:background="@drawable/bgd_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/item_content"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <ImageView
+            android:id="@+id/functionImage"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center_vertical"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_marginLeft="15dp"
+            android:textSize="18sp"
+            android:textColor="#373737"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="功能"/>
+
+        <View
+            android:id="@+id/red_dot"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:background="@drawable/red_dot"/>
+
+        <ImageView
+            android:layout_marginRight="20dp"
+            android:src="@drawable/account_ic_right_arrow"
+            android:layout_gravity="center_vertical"
+            android:layout_width="8dp"
+            android:layout_height="16dp" />
+    </LinearLayout>
+    <View
+        android:layout_marginLeft="80dp"
+        android:layout_below="@id/item_content"
+        android:background="#D9D9D9"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+</RelativeLayout>

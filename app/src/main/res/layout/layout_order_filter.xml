@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_order_filter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_store_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="客户名称:"
+            android:textColor="@color/bill_line_title"
+            android:textSize="@dimen/bill_line_title" />
+
+        <TextView
+            android:id="@+id/tv_storeName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:hint="请选择"
+            android:textColor="@color/bill_line_text"
+            android:textColorHint="@color/bill_line_hint"
+            android:textSize="@dimen/bill_line_title" />
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/account_ic_right_arrow" />
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/borderLight" />
+
+    <LinearLayout
+        android:id="@+id/layout_order_start_date"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="开始日期:"
+            android:textColor="@color/bill_line_title"
+            android:textSize="@dimen/bill_line_title" />
+
+        <TextView
+            android:id="@+id/tv_orderStartDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:hint="请选择"
+            android:textColor="@color/bill_line_text"
+            android:textColorHint="@color/bill_line_hint"
+            android:textSize="@dimen/bill_line_title" />
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/account_ic_right_arrow" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/borderLight" />
+
+    <LinearLayout
+        android:id="@+id/layout_order_end_date"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="结束日期:"
+            android:textColor="@color/bill_line_title"
+            android:textSize="@dimen/bill_line_title" />
+
+        <TextView
+            android:id="@+id/tv_orderEndDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.91"
+            android:hint="请选择"
+            android:textColor="@color/bill_line_text"
+            android:textColorHint="@color/bill_line_hint"
+            android:textSize="@dimen/bill_line_title" />
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/account_ic_right_arrow" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/borderLight" />
+
+    <LinearLayout
+        android:id="@+id/layout_order_state"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="当前状态:"
+            android:textColor="@color/bill_line_title"
+            android:textSize="@dimen/bill_line_title" />
+
+        <TextView
+            android:id="@+id/tv_orderState"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:hint="请选择"
+            android:textColor="@color/bill_line_text"
+            android:textColorHint="@color/bill_line_hint"
+            android:textSize="@dimen/bill_line_title" />
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/account_ic_right_arrow" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/borderLight" />
+
+    <LinearLayout
+        android:id="@+id/layout_order_type"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="订单类型:"
+            android:textColor="@color/bill_line_title"
+            android:textSize="@dimen/bill_line_title" />
+
+        <TextView
+            android:id="@+id/tv_deliveryNoteType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:hint="请选择"
+            android:textColor="@color/bill_line_text"
+            android:textColorHint="@color/bill_line_hint"
+            android:textSize="@dimen/bill_line_title" />
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/account_ic_right_arrow" />
+    </LinearLayout>
+
+
+</LinearLayout>

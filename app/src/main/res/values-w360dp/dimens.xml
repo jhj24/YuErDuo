@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="font_normal">16sp</dimen>
+    <dimen name="font_smaller">10sp</dimen>
+    <dimen name="font_small">14sp</dimen>
+    <dimen name="font_big">18sp</dimen>
+    <dimen name="font_large">22sp</dimen>
+    <dimen name="bottom_tab_font_size">20dp</dimen>
+    <dimen name="bottom_tab_padding_up">10dp</dimen>
+    <dimen name="bottom_tab_padding_drawable">5dp</dimen>
+    <dimen name="category_float_list_height">350dip</dimen>
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="font_larger">26sp</dimen>
+    <dimen name="font_25sp">25sp</dimen>
+    <dimen name="font_10sp">10sp</dimen>
+    <dimen name="font_8sp">8sp</dimen>
+
+    <!-- VBar控件刻度线高度 -->
+    <dimen name="vbar_scale_height">3dp</dimen>
+    <!-- VBar控件X轴Label高度 -->
+    <dimen name="vbar_label_height">20dp</dimen>
+    <!-- VBar控件POP窗口关闭按钮高度 -->
+    <dimen name="vbar_pop_close_height">36dp</dimen>
+
+    <!-- VBar控件paddingLeft -->
+    <dimen name="vbar_padding_left">15dp</dimen>
+    <!-- VBar控件paddingRight -->
+    <dimen name="vbar_padding_right">5dp</dimen>
+
+    <!-- HBar控件Label高度 -->
+    <dimen name="hbar_label_height">20dp</dimen>
+
+</resources>

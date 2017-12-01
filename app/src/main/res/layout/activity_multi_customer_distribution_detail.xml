@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_visit_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackgroundDark"
+    android:orientation="vertical"
+    tools:context="com.jqyd.yuerduo.activity.visit.VisitInfoActivity">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/customer_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:background="@color/white_bg"
+        android:layout_weight="1" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/borderLight" />
+
+        <LinearLayout
+            android:id="@+id/layout_sales_area"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bgd_list_item"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="销售区域:" />
+
+            <TextView
+                android:id="@+id/tv_sales_area"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/bill_line_text"
+                android:layout_weight="1"
+                android:hint="请选择" />
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/account_ic_right_arrow" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/borderLight" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_commit"
+        style="@style/buttonNormal2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提交" />
+</LinearLayout>

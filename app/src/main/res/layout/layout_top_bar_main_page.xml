@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clipToPadding="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#38ADFF"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageButton
+            android:id="@+id/topBar_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/topbar_icon_back" />
+
+        <TextView
+            android:id="@+id/topBar_title"
+            style="@style/TopBarTitle"
+            android:text="标题" />
+
+        <RadioGroup
+            android:visibility="gone"
+            android:id="@+id/contactsRadioGroup"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/rb_YuanGong"
+                android:button="@null"
+                android:background="@drawable/contacts_radio_left"
+                android:textColor="@android:color/white"
+                android:text="员工"
+                android:textSize="15sp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:layout_width="wrap_content"
+                android:checked="true"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/rb_KeHu"
+                android:textColor="@android:color/white"
+                android:button="@null"
+                android:background="@drawable/contacts_radio_right"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="客户"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+        <ImageButton
+            android:visibility="gone"
+            android:id="@+id/arrow_down"
+            android:background="@null"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@id/topBar_title"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/topBar_right_button"
+            style="@style/TopBarRightTitle"
+            android:text="确定" />
+
+        <ImageButton
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:id="@+id/topBar_right_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:src="@drawable/topbar_icon_light_barcode" />
+    </RelativeLayout>
+</RelativeLayout>
+
+

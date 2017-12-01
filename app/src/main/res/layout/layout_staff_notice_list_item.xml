@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/list_item"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bgd_list_item"
+    android:clickable="true"
+    android:padding="15dp">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="标题"
+        android:textColor="#2F3D43"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_title_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="今天 10:17  发布人：张三  已阅：25"
+        android:textColor="#A5A5A5"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:paddingTop="5dp"
+        android:text="内容"
+        android:textColor="#A5A5A5"
+        android:textSize="12sp" />
+
+</LinearLayout>

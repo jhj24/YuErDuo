@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#38ADFF"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageButton
+            android:id="@+id/topBar_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/topbar_icon_back" />
+
+        <TextView
+            android:id="@+id/topBar_left_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="16sp"
+            android:paddingRight="16sp"
+            android:text="取消"
+            android:textColor="@drawable/color_text_topbar"
+            android:textSize="14sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/topBar_title"
+            style="@style/TopBarTitle"
+            android:text="标题" />
+
+        <TextView
+            android:id="@+id/topBar_right_button"
+            style="@style/TopBarRightTitle"
+            android:text="确定"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/topBar_right_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="14dp"
+            android:paddingRight="14dp"
+            android:paddingTop="14dp"
+            android:src="@drawable/map_top_title"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>
+
+

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="@drawable/border_bgd2"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="4dp"
+            android:id="@+id/tv_title"
+            android:textSize="20sp"
+            android:text="老村长快乐生活"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="#323232"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:padding="4dp"
+            android:textColor="#666666"
+            android:textSize="13sp"
+            android:id="@+id/tv_title_small"
+            android:text="香型:浓香型 净含量:125ML 酒精度:45%香型:浓香型 净含量:125ML 酒精度:45%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView
+        android:paddingLeft="8dp"
+        android:paddingRight="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/verticalline"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+    <TextView
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/tv_count"
+        android:textSize="20sp"
+        android:text="×300"
+        android:textColor="@color/orange_deep"
+        android:layout_width="wrap_content"
+        android:minWidth="60dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>

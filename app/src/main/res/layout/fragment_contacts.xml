@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:background="@color/borderLight"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/search_input_bgd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/et_search"
+                android:hint="搜索联系人"
+                android:textSize="14sp"
+                android:textColorHint="@color/contactsSearchHintText"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/searchBarMask"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/search_input_bgd"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_search"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp" />
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/contactsSearchHintText"
+                    android:text="搜索联系人"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ListView
+            android:id="@+id/contactsList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:divider="@null" />
+
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_gravity="center"
+            android:background="@color/contactsCenterCharBackground"
+            android:gravity="center"
+            android:textColor="@color/contactsCenterChar"
+            android:textSize="30.0dip"
+            android:visibility="invisible" />
+
+        <com.jqyd.yuerduo.fragment.contacts.SideBar
+            android:id="@+id/sidebar"
+            android:layout_width="30dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center" />
+
+        <RelativeLayout
+            android:id="@+id/state_mask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:text="刷   新"
+                android:layout_centerInParent="true"
+                android:id="@+id/reload"
+                android:textColor="@color/list_refresh_btn"
+                android:background="@drawable/bgd_refresh_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginBottom="20dp"
+                android:text="请求失败"
+                android:id="@+id/tv_mask"
+                android:layout_above="@id/reload"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>
